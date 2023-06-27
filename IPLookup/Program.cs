@@ -57,7 +57,7 @@
                 {
                     if (IsIpInCidrRange(ipAddress, cidrNotation))
                     {
-                        Console.WriteLine($"IP Address: {ipAddress} matches the CIDR notation: {cidrNotation}");
+                        Console.WriteLine($"IP Address: '{ipAddress}' matches the CIDR notation: '{cidrNotation}'");
                         matched = true;
                         break;
                     }
@@ -65,7 +65,7 @@
 
                 if (!matched)
                 {
-                    Console.WriteLine($"IP Address: {ipAddress} did not match a CIDR notation.");
+                    Console.WriteLine($"IP Address: '{ipAddress}' did not match a CIDR notation.");
                 }
             }
 
